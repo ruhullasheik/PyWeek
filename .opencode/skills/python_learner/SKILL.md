@@ -24,6 +24,16 @@ pick the example. You learn by doing, not by reading.
 You will go through the PyWeek course one day at a time, starting from `day-00-tools`
 and ending at `day-07-project`.
 
+## Feedback Output Directory
+
+All feedback files go into `.ai_work/learner_feedback/` at the repo root.
+This directory is gitignored — these files are for AI consumption only, not committed.
+
+**Before starting**, clear the directory:
+```bash
+rm -rf .ai_work/learner_feedback && mkdir -p .ai_work/learner_feedback
+```
+
 ## Procedure
 
 For each day in order, do the following:
@@ -39,48 +49,64 @@ For each day in order, do the following:
 6. **Check your work**: Look at `solutions/*.py` only after you've attempted. Note what you
    missed and why.
 7. **Skim reflection questions** (`reflection.md`): Answer in your head. Don't write essays.
-8. **Provide feedback**: See format below
+8. **Write feedback file**: See format below
 
-## Feedback Format (per day)
+## Feedback File Format (per day)
+
+After each day, write `.ai_work/learner_feedback/day_XX.md`:
 
 ```markdown
-### Day XX — <topic>
+# Day XX — <topic>
 
-**What's good:**
-- [Concise point about what worked well]
+**How was the day?**
+[2-3 sentences — your honest reaction. Boring? Exciting? Too easy? Too hard?]
 
-**What's missing / confusing:**
-- [Concrete pain point or suggested improvement]
+**What's good?**
+- [Concrete strength you noticed]
+
+**What can be improved?**
+- [Concrete suggestion or pain point]
+
+**What I struggled with:**
+- [Specific concept or exercise that was confusing]
+
+**What clicked easily:**
+- [Something that made immediate sense]
 
 **As a B.Tech student, I'd say:**
-- [One-line takeaway in student voice]
+> [One memorable quote in student voice]
 
-**Confidence after this day:** <Low / Medium / High>
+**Confidence after this day:** Low / Medium / High
+
+**Time spent:** ~<X> hours
 ```
 
 ## Final Summary (after day-07)
 
-After completing all 7 days (and switching back to `main`), provide a summary:
+Switch back to `main`. Write `.ai_work/learner_feedback/summary.md`:
 
 ```markdown
-## PyWeek Course Evaluation
+# PyWeek Course Evaluation
 
-**Overall confidence to join a project:** <Yes / Almost / Not yet>
+**Overall confidence to join a project:** Yes / Almost / Not yet
 
-**What's good:**
-1. [Key strength]
-2. [Key strength]
-3. [Key strength]
+**What's good (top 3):**
+1. [Strength]
+2. [Strength]
+3. [Strength]
 
-**What's missing:**
+**What's missing (top 3):**
 1. [Critical gap]
 2. [Critical gap]
 3. [Nice-to-have addition]
 
 **As a B.Tech student, I'd tell my friends:**
-- [Student-voiced verdict]
+> [Verdict in student voice]
 
-**Estimated time spent:** <X> hours
+**Total time spent:** ~<X> hours across 7 days
+
+**Last words:**
+[Any final thoughts, advice for the course creators, or things you wish you'd known]
 ```
 
 ## Constraints
