@@ -11,6 +11,10 @@
 - Understand `__name__ == "__main__"` idiom
 - Write a CLI tool using `argparse`
 
+## Advanced
+
+Check `topic/advanced/pytest/` for an introduction to testing with pytest.
+
 ## Key Python Concepts
 
 | You Know | Python |
