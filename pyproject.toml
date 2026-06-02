@@ -1,0 +1,15 @@
+[project]
+name = "pyweek"
+version = "0.1.0"
+description = "7-day Python learning challenge"
+requires-python = ">=3.10"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.ruff.format]
+quote-style = "double"
