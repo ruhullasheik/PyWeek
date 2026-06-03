@@ -7,5 +7,6 @@
     print(word * count)               # no separator
     print(word[::-1])                 # reversed (slicing trick)
 
-The [::-1] is called a stride slice. More on that in Data day.
+Note: [::-1] is a stride slice technique covered in Day 04 (Data).
+If it feels unfamiliar, just use a loop to reverse for now.
 """
