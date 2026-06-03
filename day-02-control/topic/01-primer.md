@@ -106,6 +106,46 @@ for n in range(2, 10):
         print(f"{n} is prime")  # runs only if inner loop didn't break
 ```
 
+## Error Handling — try/except
+
+Errors happen. In Python, you catch them with `try/except` instead of checking return codes.
+
+```python
+# Instead of checking if input is a number:
+try:
+    age = int(input("Enter your age: "))
+    print(f"You are {age} years old")
+except ValueError:
+    print("That's not a valid number!")
+```
+
+### Catching specific exceptions
+
+```python
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+    print(f"10 / {num} = {result}")
+except ValueError:
+    print("Please enter a valid number")
+except ZeroDivisionError:
+    print("Can't divide by zero")
+```
+
+### The full chain: try / except / else / finally
+
+```python
+try:
+    file = open("data.txt")
+    content = file.read()
+except FileNotFoundError:
+    print("File not found")
+else:
+    print(f"Read {len(content)} characters")  # runs if no exception
+finally:
+    print("Done")  # always runs — even if exception
+```
+
 ## Match/Case (Python 3.10+)
 
 Python's `match` is more powerful than C's `switch`. It supports pattern matching.

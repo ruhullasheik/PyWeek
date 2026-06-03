@@ -1,4 +1,4 @@
-"""Exercise 5: Matrix Multiplication
+"""Exercise 6: Matrix Multiplication (Advanced)
 
 Given two matrices A and B, compute their product C = A × B.
 
