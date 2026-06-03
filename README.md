@@ -33,6 +33,8 @@ day-XX-topic/
 └── reflection.md    # Questions to reinforce learning
 ```
 
+Create a `sandbox/` folder in the repo root to write your own scratch files, experiments, and practice code. It's gitignored on every branch — your work won't interfere with Git and won't show up in `git status`.
+
 You are expected to **practice every day**. Exercises are non-negotiable — they're why this works in a week.
 
 ## Prerequisites
